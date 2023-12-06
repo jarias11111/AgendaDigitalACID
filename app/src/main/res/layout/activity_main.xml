@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Icon1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/tree"/>
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NUEVA RESERVA"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Icon1"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DESCRIPCIÓN"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="FECHA"
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="HORA"
+        android:textSize="24dp"
+        android:layout_below="@+id/contact"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="NUEVA RESERVA"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/dob"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="MODIFICAR RESERVA"
+        android:layout_below="@id/btnInsert"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="ELIMINAR RESERVA"
+        android:layout_below="@id/btnUpdate"/>
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="VER RESERVAS"
+        android:layout_below="@id/btnDelete"/>
+</RelativeLayout>
